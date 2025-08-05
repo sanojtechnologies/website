@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanoj Technologies | Your Path to Professional Growth</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Sanoj Technologies offers personalized career coaching, resume optimization, and mock interview preparation for tech professionals.">
+    <!-- Schema.org Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Sanoj Technologies",
+      "url": "https://www.sanojtechnologies.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.sanojtechnologies.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Sanoj Technologies",
+      "url": "https://www.sanojtechnologies.com",
+      "logo": "https://www.sanojtechnologies.com/fulllogo_transparent_nobuffer.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-9840916039",
+        "contactType": "customer service"
+      }
+    }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Updated Palette: Dark, Tech-Focused Blue/Teal -->
+    <!-- Application Structure Plan: The SPA is redesigned as a public-facing website. the structure prioritizes a clear "About Us" and "Services" flow. The core interactive element (a toggle switch) has been removed to simplify the site to focus only on the current services. Sections are organized logically (Our Story, Services, Who We Help, Our Edge) to guide the user through the company's offerings and value proposition. -->
+    <!-- Visualization & Content Choices: 
+        - Report Info: Services. Goal: Inform. Viz: Cards. Interaction: Static. Justification: Provides a clean, organized view of the single phase of offerings. Method: HTML/Tailwind + JS.
+        - Report Info: Target Market. Goal: Inform. Viz: List with Unicode icons. Interaction: Static visual. Justification: Presents who the services are for in an easy-to-read, client-focused format. Method: HTML/Tailwind.
+    -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .card-fade {
+            transition: opacity 0.4s ease-in-out, max-height 0.6s ease-in-out, transform 0.4s ease-in-out;
+            transform-origin: top;
+        }
+        .hidden-card {
+            opacity: 0;
+            max-height: 0;
+            transform: scaleY(0.9);
+            pointer-events: none;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            border-width: 0 !important;
+        }
+        .nav-link {
+            transition: color 0.2s, border-color 0.2s;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <header class="bg-gray-900/80 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-700">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-cyan-400">Sanoj Technologies</h1>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="nav-link text-gray-400 hover:text-cyan-400 border-b-2 border-transparent hover:border-cyan-400 pb-1">About Us</a>
+                <a href="#services" class="nav-link text-gray-400 hover:text-cyan-400 border-b-2 border-transparent hover:border-cyan-400 pb-1">Services</a>
+                <a href="#clients" class="nav-link text-gray-400 hover:text-cyan-400 border-b-2 border-transparent hover:border-cyan-400 pb-1">Who We Help</a>
+                <a href="#edge" class="nav-link text-gray-400 hover:text-cyan-400 border-b-2 border-transparent hover:border-cyan-400 pb-1">Our Edge</a>
+                <a href="#contact" class="nav-link text-gray-400 hover:text-cyan-400 border-b-2 border-transparent hover:border-cyan-400 pb-1">Contact Us</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-400 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-gray-400 hover:text-cyan-400">About Us</a>
+            <a href="#services" class="block py-2 text-gray-400 hover:text-cyan-400">Services</a>
+            <a href="#clients" class="block py-2 text-gray-400 hover:text-cyan-400">Who We Help</a>
+            <a href="#edge" class="block py-2 text-gray-400 hover:text-cyan-400">Our Edge</a>
+            <a href="#contact" class="block py-2 text-gray-400 hover:text-cyan-400">Contact Us</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <section id="about" class="text-center mb-24 scroll-mt-24">
+            <h2 class="text-4xl md:text-5xl font-bold text-cyan-400 mb-4">A New Path to Professional Growth</h2>
+            <p class="text-lg text-gray-300 max-w-3xl mx-auto mb-6">Sanoj Technologies is a career and personality development firm empowering individuals to achieve their goals by blending expert, human-centric coaching with innovative, data-driven technology.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-700">
+                    <h3 class="text-xl font-bold text-cyan-500 mb-2">Our Mission</h3>
+                    <p class="text-gray-300">To empower individuals to navigate their professional journey with confidence and purpose.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-700">
+                    <h3 class="text-xl font-bold text-cyan-500 mb-2">Our Vision</h3>
+                    <p class="text-gray-300">To be the leading career development platform for tech professionals, providing a personalized path to fulfillment.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="text-center mb-24 scroll-mt-24">
+            <h2 class="text-3xl font-bold text-cyan-400 mb-4">Our Service Offerings</h2>
+            <p class="text-lg text-gray-300 max-w-3xl mx-auto mb-8">Our comprehensive suite of services is designed to help you build a strong foundation for your career with expert guidance and hands-on support.</p>
+            <div class="max-w-4xl mx-auto bg-gray-800 p-8 rounded-xl shadow-md border border-gray-700 mb-12">
+                <h3 class="text-2xl font-bold text-cyan-500 mb-3" id="services-title">Personalized Career Coaching & Consulting</h3>
+                <p class="text-gray-300 text-lg" id="services-description">We offer high-touch, one-on-one services to build a strong foundation for your career. Our expertise is your primary resource.</p>
+            </div>
+            <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+        </section>
+
+        <section id="clients" class="mb-24 scroll-mt-24">
+            <h2 class="text-3xl font-bold text-cyan-400 text-center mb-4">Who We Help</h2>
+            <p class="text-lg text-gray-300 max-w-3xl mx-auto text-center mb-12">Our expertise is tailored to a diverse range of tech professionals and organizations.</p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <div class="bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-700">
+                    <h3 class="text-2xl font-bold text-cyan-500 mb-4">For Individuals</h3>
+                    <div id="individual-clients" class="space-y-4"></div>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-700">
+                    <h3 class="text-2xl font-bold text-cyan-500 mb-4">For Organizations</h3>
+                     <div id="corporate-clients" class="space-y-4"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="edge" class="text-center bg-cyan-900 text-white py-12 rounded-2xl mb-24 scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-4">Our Unique Edge</h2>
+            <p class="text-lg text-cyan-100 max-w-4xl mx-auto">Sanoj Technologies' unique advantage is the combination of deep, hands-on experience in software development and cloud architecture with a structured, technology-driven approach to career development. We provide practical, industry-relevant guidance that is often missing from generic career coaching, speaking the language of the tech world to build trust and provide solutions that truly work.</p>
+        </section>
+
+        <!-- Corrected Contact Us section for consistent spacing -->
+        <section id="contact" class="text-center mb-24 scroll-mt-24">
+            <h2 class="text-3xl font-bold text-cyan-400 mb-4">Contact Us</h2>
+            <p class="text-lg text-gray-300 max-w-3xl mx-auto mb-8">Ready to take the next step in your career? Get in touch with us.</p>
+            <div class="max-w-4xl mx-auto bg-gray-800 p-8 rounded-xl shadow-md border border-gray-700">
+                <div class="flex flex-col items-center space-y-4">
+                    <a href="tel:+919840916039" class="flex items-center space-x-4 text-cyan-400 hover:text-cyan-300 transition-colors duration-200">
+                        <span class="text-3xl">📞</span>
+                        <span class="text-lg font-medium">+91-9840916039</span>
+                    </a>
+                    <a href="mailto:contact@sanojtechnologies.com" class="flex items-center space-x-4 text-cyan-400 hover:text-cyan-300 transition-colors duration-200">
+                        <span class="text-3xl">📧</span>
+                        <span class="text-lg font-medium">contact@sanojtechnologies.com</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 mt-16">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 Sanoj Technologies. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let servicesGrid = document.getElementById('services-grid');
+
+            let data = {
+                early: {
+                    title: 'Personalized Career Coaching & Consulting',
+                    description: 'We offer high-touch, one-on-one services to build a strong foundation for your career. Our expertise is your primary resource.',
+                    services: [
+                        { icon: '🤝', title: 'Individualized Career Coaching', description: 'One-on-one sessions to understand goals, strengths, and weaknesses.' },
+                        { icon: '📄', title: 'Resume & LinkedIn Optimization', description: 'Hands-on service to craft compelling professional profiles for the tech industry.' },
+                        { icon: '🎙️', title: 'Mock Interview Preparation', description: 'Tailored mock interviews for tech roles with detailed, actionable feedback.' },
+                        { icon: '🧠', title: 'Personality Assessments', description: 'Utilize tools like DISC/MBTI for self-awareness in career choices.' },
+                        { icon: '👥', title: 'Soft Skills Workshops', description: 'Small group workshops on communication, teamwork, and leadership for tech.' },
+                        { icon: '�', title: 'Portfolio & Project Review', description: 'Detailed feedback on your project portfolio to showcase your skills effectively.' },
+                    ],
+                    clients: {
+                        individual: [
+                            { icon: '🎓', text: 'Recent computer science and engineering graduates.' },
+                            { icon: '💻', text: 'Junior to mid-level software developers seeking advancement.' },
+                            { icon: '☁️', text: 'Professionals transitioning into specialized tech roles like cloud.' },
+                        ],
+                        corporate: []
+                    }
+                }
+            };
+
+            let servicesTitle = document.getElementById('services-title');
+            let servicesDescription = document.getElementById('services-description');
+            let individualClients = document.getElementById('individual-clients');
+            let corporateClients = document.getElementById('corporate-clients');
+            
+            function createServiceCard(service) {
+                let card = document.createElement('div');
+                card.className = 'bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-700 card-fade';
+                card.innerHTML = `
+                    <div class="text-4xl mb-4">${service.icon}</div>
+                    <h4 class="text-xl font-bold text-cyan-500 mb-2">${service.title}</h4>
+                    <p class="text-gray-300">${service.description}</p>
+                `;
+                return card;
+            }
+            
+            function createListItem(item) {
+                return `
+                    <div class="flex items-start">
+                        <div class="text-xl mr-4 mt-1">${item.icon}</div>
+                        <div>
+                            <p class="text-gray-200">${item.text}</p>
+                        </div>
+                    </div>
+                `;
+            }
+
+            function initializeView() {
+                let stageData = data.early;
+
+                servicesTitle.textContent = stageData.title;
+                servicesDescription.textContent = stageData.description;
+                
+                servicesGrid.innerHTML = '';
+                stageData.services.forEach(service => {
+                    let card = createServiceCard(service);
+                    servicesGrid.appendChild(card);
+                });
+
+                individualClients.innerHTML = stageData.clients.individual.map(createListItem).join('');
+                if (stageData.clients.corporate.length > 0) {
+                    corporateClients.innerHTML = stageData.clients.corporate.map(createListItem).join('');
+                } else {
+                    corporateClients.innerHTML = `<p class="text-gray-300">We are currently focused on individual clients and will expand to corporate partnerships in the future.</p>`;
+                }
+            }
+
+            initializeView();
+
+            let menuBtn = document.getElementById('menu-btn');
+            let mobileMenu = document.getElementById('mobile-menu');
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
