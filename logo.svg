@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" role="img" aria-label="Sanoj Technologies">
+  <defs>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#155e75"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="32" width="96" height="96" rx="21" fill="url(#mark)"/>
+  <rect x="10" y="34" width="92" height="92" rx="19" fill="none" stroke="#22d3ee" stroke-opacity="0.45" stroke-width="2"/>
+  <text x="56" y="100" text-anchor="middle"
+        font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="58" font-weight="700" fill="#22d3ee" letter-spacing="-1.5">S</text>
+  <text x="130" y="84"
+        font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="40" font-weight="700" fill="#e5e7eb" letter-spacing="-0.8">Sanoj</text>
+  <text x="248" y="84"
+        font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="40" font-weight="400" fill="#22d3ee" letter-spacing="-0.8">Technologies</text>
+  <text x="131" y="114"
+        font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="15" font-weight="500" fill="#9ca3af" letter-spacing="3.4">CAREER &#183; CLOUD &#183; GROWTH</text>
+</svg>
