@@ -317,20 +317,20 @@
     <!--
       Cloudflare Web Analytics (cookieless, no banner required).
 
-      Paste the token from Cloudflare dashboard > Web Analytics > Manage site into
-      cfToken below. While it is empty nothing is requested and no third-party
-      script runs.
+      This domain resolves to GitHub Pages via Wix DNS, so Cloudflare does not
+      proxy it and the beacon has to be installed manually with a token from
+      Cloudflare dashboard > Web Analytics > Manage site.
 
-      If this domain is proxied through Cloudflare, the beacon is injected
-      automatically and you should leave cfToken empty (Cloudflare only supports
-      one beacon per page).
+      If the domain is ever moved behind Cloudflare's proxy, remove the token
+      below and let Cloudflare inject the beacon automatically - it supports
+      only one beacon per page, so keeping both would double-count.
 
       Note: Cloudflare Web Analytics is pageview-only - it has no custom event
       API. CTA clicks are routed through window.trackEvent, which lights up
       automatically if Cloudflare Zaraz or GoatCounter is added later.
     -->
     <script>
-        window.SANOJ_ANALYTICS = { cfToken: '' };
+        window.SANOJ_ANALYTICS = { cfToken: '54eec4ca55f14407903cc0e5da73ca10' };
 
         (function () {
             const token = window.SANOJ_ANALYTICS.cfToken;
