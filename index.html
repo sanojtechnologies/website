@@ -11,8 +11,8 @@
     <link rel="canonical" href="https://sanojtechnologies.com/">
 
     <!-- Icons -->
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
     <!-- Open Graph (WhatsApp, LinkedIn, Facebook) -->
     <meta property="og:type" content="website">
@@ -68,39 +68,10 @@
       }
     }
     </script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Updated Palette: Dark, Tech-Focused Blue/Teal -->
-    <!-- Application Structure Plan: The SPA is redesigned as a public-facing website. the structure prioritizes a clear "About Us" and "Services" flow. The core interactive element (a toggle switch) has been removed to simplify the site to focus only on the current services. Sections are organized logically (Our Story, Services, Who We Help, Our Edge) to guide the user through the company's offerings and value proposition. -->
-    <!-- Visualization & Content Choices: 
-        - Report Info: Services. Goal: Inform. Viz: Cards. Interaction: Static. Justification: Provides a clean, organized view of the single phase of offerings. Method: HTML/Tailwind + JS.
-        - Report Info: Target Market. Goal: Inform. Viz: List with Unicode icons. Interaction: Static visual. Justification: Presents who the services are for in an easy-to-read, client-focused format. Method: HTML/Tailwind.
-    -->
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .card-fade {
-            transition: opacity 0.4s ease-in-out, max-height 0.6s ease-in-out, transform 0.4s ease-in-out;
-            transform-origin: top;
-        }
-        .hidden-card {
-            opacity: 0;
-            max-height: 0;
-            transform: scaleY(0.9);
-            pointer-events: none;
-            margin-top: 0 !important;
-            margin-bottom: 0 !important;
-            padding-top: 0 !important;
-            padding-bottom: 0 !important;
-            border-width: 0 !important;
-        }
-        .nav-link {
-            transition: color 0.2s, border-color 0.2s;
-        }
-    </style>
 </head>
 <body class="bg-gray-900 text-gray-100">
 
@@ -249,37 +220,28 @@
         document.addEventListener('DOMContentLoaded', () => {
             let servicesGrid = document.getElementById('services-grid');
 
-            let data = {
-                early: {
-                    title: 'Personalized Career Coaching & Consulting',
-                    description: 'We offer high-touch, one-on-one services to build a strong foundation for your career. Our expertise is your primary resource.',
-                    services: [
-                        { icon: '🤝', title: 'Individualized Career Coaching', description: 'One-on-one sessions to understand goals, strengths, and weaknesses.' },
-                        { icon: '📄', title: 'Resume & LinkedIn Optimization', description: 'Hands-on service to craft compelling professional profiles for the tech industry.' },
-                        { icon: '🎙️', title: 'Mock Interview Preparation', description: 'Tailored mock interviews for tech roles with detailed, actionable feedback.' },
-                        { icon: '🧠', title: 'Personality Assessments', description: 'Utilize tools like DISC/MBTI for self-awareness in career choices.' },
-                        { icon: '👥', title: 'Soft Skills Workshops', description: 'Small group workshops on communication, teamwork, and leadership for tech.' },
-                        { icon: '🗂️', title: 'Portfolio & Project Review', description: 'Detailed feedback on your project portfolio to showcase your skills effectively.' },
-                    ],
-                    clients: {
-                        individual: [
-                            { icon: '🎓', text: 'Recent computer science and engineering graduates.' },
-                            { icon: '💻', text: 'Junior to mid-level software developers seeking advancement.' },
-                            { icon: '☁️', text: 'Professionals transitioning into specialized tech roles like cloud.' },
-                        ],
-                        corporate: []
-                    }
-                }
-            };
+            // Only the services and individual-client lists are rendered from data.
+            // The corporate panel is static in the markup (see #corporate-clients).
+            const services = [
+                { icon: '🤝', title: 'Individualized Career Coaching', description: 'One-on-one sessions to understand goals, strengths, and weaknesses.' },
+                { icon: '📄', title: 'Resume & LinkedIn Optimization', description: 'Hands-on service to craft compelling professional profiles for the tech industry.' },
+                { icon: '🎙️', title: 'Mock Interview Preparation', description: 'Tailored mock interviews for tech roles with detailed, actionable feedback.' },
+                { icon: '🧠', title: 'Personality Assessments', description: 'Utilize tools like DISC/MBTI for self-awareness in career choices.' },
+                { icon: '👥', title: 'Soft Skills Workshops', description: 'Small group workshops on communication, teamwork, and leadership for tech.' },
+                { icon: '🗂️', title: 'Portfolio & Project Review', description: 'Detailed feedback on your project portfolio to showcase your skills effectively.' },
+            ];
 
-            let servicesTitle = document.getElementById('services-title');
-            let servicesDescription = document.getElementById('services-description');
-            let individualClients = document.getElementById('individual-clients');
-            let corporateClients = document.getElementById('corporate-clients');
+            const individualClients = [
+                { icon: '🎓', text: 'Recent computer science and engineering graduates.' },
+                { icon: '💻', text: 'Junior to mid-level software developers seeking advancement.' },
+                { icon: '☁️', text: 'Professionals transitioning into specialized tech roles like cloud.' },
+            ];
+
+            let individualClientList = document.getElementById('individual-clients');
             
             function createServiceCard(service) {
                 let card = document.createElement('div');
-                card.className = 'bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-700 card-fade';
+                card.className = 'bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-700';
                 card.innerHTML = `
                     <div class="text-4xl mb-4">${service.icon}</div>
                     <h4 class="text-xl font-bold text-cyan-500 mb-2">${service.title}</h4>
@@ -299,27 +261,12 @@
                 `;
             }
 
-            function initializeView() {
-                let stageData = data.early;
+            servicesGrid.innerHTML = '';
+            services.forEach(service => {
+                servicesGrid.appendChild(createServiceCard(service));
+            });
 
-                servicesTitle.textContent = stageData.title;
-                servicesDescription.textContent = stageData.description;
-                
-                servicesGrid.innerHTML = '';
-                stageData.services.forEach(service => {
-                    let card = createServiceCard(service);
-                    servicesGrid.appendChild(card);
-                });
-
-                individualClients.innerHTML = stageData.clients.individual.map(createListItem).join('');
-                // The corporate panel keeps its static "launching soon" content until real
-                // corporate offerings are added to data.early.clients.corporate.
-                if (stageData.clients.corporate.length > 0) {
-                    corporateClients.innerHTML = stageData.clients.corporate.map(createListItem).join('');
-                }
-            }
-
-            initializeView();
+            individualClientList.innerHTML = individualClients.map(createListItem).join('');
 
             let menuBtn = document.getElementById('menu-btn');
             let mobileMenu = document.getElementById('mobile-menu');

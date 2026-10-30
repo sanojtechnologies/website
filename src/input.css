@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Moved out of the inline <style> block so it survives the prebuild. */
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .nav-link {
+    transition: color 0.2s, border-color 0.2s;
+  }
+}
