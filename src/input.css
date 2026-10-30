@@ -14,3 +14,10 @@
     transition: color 0.2s, border-color 0.2s;
   }
 }
+
+/* Respect the OS "reduce motion" setting: the page opts into smooth scrolling. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

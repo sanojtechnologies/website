@@ -75,6 +75,8 @@
 </head>
 <body class="bg-gray-900 text-gray-100">
 
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[60] focus:px-4 focus:py-2 focus:rounded-lg focus:bg-cyan-500 focus:text-gray-900 focus:font-semibold">Skip to content</a>
+
     <header class="bg-gray-900/80 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-700">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <h1 class="text-2xl font-bold text-cyan-400">Sanoj Technologies</h1>
@@ -86,8 +88,9 @@
                 <a href="#contact" class="nav-link text-gray-400 hover:text-cyan-400 border-b-2 border-transparent hover:border-cyan-400 pb-1">Contact Us</a>
             </div>
             <div class="md:hidden">
-                <button id="menu-btn" class="text-gray-400 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <button id="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu"
+                        class="text-gray-400 rounded-md p-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
             </div>
         </nav>
@@ -100,7 +103,7 @@
         </div>
     </header>
 
-    <main class="container mx-auto px-6 py-12">
+    <main id="main" class="container mx-auto px-6 py-12">
 
         <section id="about" class="text-center mb-24 scroll-mt-24">
             <h2 class="text-4xl md:text-5xl font-bold text-cyan-400 mb-4">A New Path to Professional Growth</h2>
@@ -203,7 +206,7 @@
     </main>
 
     <footer class="bg-gray-800 text-gray-300 mt-16">
-        <div class="container mx-auto px-6 py-8 text-center">
+        <div class="container mx-auto px-6 pt-8 pb-28 md:pb-8 text-center">
             <p>&copy; <span id="year">2026</span> Sanoj Technologies. All Rights Reserved.</p>
         </div>
     </footer>
@@ -243,7 +246,7 @@
                 let card = document.createElement('div');
                 card.className = 'bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-700';
                 card.innerHTML = `
-                    <div class="text-4xl mb-4">${service.icon}</div>
+                    <div class="text-4xl mb-4" aria-hidden="true">${service.icon}</div>
                     <h4 class="text-xl font-bold text-cyan-500 mb-2">${service.title}</h4>
                     <p class="text-gray-300">${service.description}</p>
                 `;
@@ -253,7 +256,7 @@
             function createListItem(item) {
                 return `
                     <div class="flex items-start">
-                        <div class="text-xl mr-4 mt-1">${item.icon}</div>
+                        <div class="text-xl mr-4 mt-1" aria-hidden="true">${item.icon}</div>
                         <div>
                             <p class="text-gray-200">${item.text}</p>
                         </div>
@@ -270,14 +273,32 @@
 
             let menuBtn = document.getElementById('menu-btn');
             let mobileMenu = document.getElementById('mobile-menu');
+
+            function setMenuOpen(open) {
+                mobileMenu.classList.toggle('hidden', !open);
+                menuBtn.setAttribute('aria-expanded', String(open));
+                menuBtn.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+            }
+
             menuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
+                setMenuOpen(menuBtn.getAttribute('aria-expanded') !== 'true');
             });
-            
+
             document.querySelectorAll('#mobile-menu a').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                });
+                link.addEventListener('click', () => setMenuOpen(false));
+            });
+
+            // Close on Escape and on click/tap outside the header.
+            document.addEventListener('keydown', event => {
+                if (event.key === 'Escape' && menuBtn.getAttribute('aria-expanded') === 'true') {
+                    setMenuOpen(false);
+                    menuBtn.focus();
+                }
+            });
+
+            document.addEventListener('click', event => {
+                if (menuBtn.getAttribute('aria-expanded') !== 'true') return;
+                if (!event.target.closest('header')) setMenuOpen(false);
             });
 
             let year = document.getElementById('year');

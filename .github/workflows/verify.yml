@@ -1,0 +1,33 @@
+name: Verify site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Rebuild stylesheet
+        run: npm run build:css
+
+      - name: Fail if styles.css is stale
+        run: |
+          if ! git diff --exit-code -- styles.css; then
+            echo "::error::styles.css is out of date. Run 'npm run build:css' locally and commit the result."
+            exit 1
+          fi
+
+      - name: Check local asset references
+        run: python3 tools/check-assets.py
