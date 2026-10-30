@@ -59,6 +59,11 @@
         "height": 512
       },
       "image": "https://sanojtechnologies.com/og-image.png",
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.sanojtechnologies.pocket_compress",
+        "https://play.google.com/store/apps/details?id=com.sanojtechnologies.minutely",
+        "https://github.com/sanojtechnologies"
+      ],
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+91-9840916039",
@@ -68,8 +73,43 @@
       }
     }
     </script>
-    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Apps by Sanoj Technologies",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "MobileApplication",
+            "name": "Offline PDF & Photo Compressor",
+            "operatingSystem": "Android",
+            "applicationCategory": "UtilitiesApplication",
+            "url": "https://play.google.com/store/apps/details?id=com.sanojtechnologies.pocket_compress",
+            "description": "Shrink photos and PDFs to an exact size on your phone. Files never leave the device.",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "MobileApplication",
+            "name": "Minutely: AI Notes & MOM Maker",
+            "operatingSystem": "Android",
+            "applicationCategory": "BusinessApplication",
+            "url": "https://play.google.com/store/apps/details?id=com.sanojtechnologies.minutely",
+            "description": "Offline meeting transcription and minutes with speaker labels and action items.",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
+          }
+        }
+      ]
+    }
+    </script>
     <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-900 text-gray-100">
 
@@ -83,6 +123,7 @@
                 <a href="#services" class="nav-link text-gray-400 hover:text-cyan-400 border-b-2 border-transparent hover:border-cyan-400 pb-1">Services</a>
                 <a href="#clients" class="nav-link text-gray-400 hover:text-cyan-400 border-b-2 border-transparent hover:border-cyan-400 pb-1">Who We Help</a>
                 <a href="#edge" class="nav-link text-gray-400 hover:text-cyan-400 border-b-2 border-transparent hover:border-cyan-400 pb-1">Our Edge</a>
+                <a href="#apps" class="nav-link text-gray-400 hover:text-cyan-400 border-b-2 border-transparent hover:border-cyan-400 pb-1">Apps</a>
                 <a href="#contact" class="nav-link text-gray-400 hover:text-cyan-400 border-b-2 border-transparent hover:border-cyan-400 pb-1">Contact Us</a>
             </div>
             <div class="md:hidden">
@@ -97,6 +138,7 @@
             <a href="#services" class="block py-2 text-gray-400 hover:text-cyan-400">Services</a>
             <a href="#clients" class="block py-2 text-gray-400 hover:text-cyan-400">Who We Help</a>
             <a href="#edge" class="block py-2 text-gray-400 hover:text-cyan-400">Our Edge</a>
+            <a href="#apps" class="block py-2 text-gray-400 hover:text-cyan-400">Apps</a>
             <a href="#contact" class="block py-2 text-gray-400 hover:text-cyan-400">Contact Us</a>
         </div>
     </header>
@@ -172,7 +214,53 @@
             <p class="text-lg text-cyan-100 max-w-4xl mx-auto">Sanoj Technologies' unique advantage is the combination of deep, hands-on experience in software development and cloud architecture with a structured, technology-driven approach to career development. We provide practical, industry-relevant guidance that is often missing from generic career coaching, speaking the language of the tech world to build trust and provide solutions that truly work.</p>
         </section>
 
-        <!-- Corrected Contact Us section for consistent spacing -->
+        <section id="apps" class="text-center mb-24 scroll-mt-24">
+            <h2 class="text-3xl font-bold text-cyan-400 mb-4">Our Apps</h2>
+            <p class="text-lg text-gray-300 max-w-3xl mx-auto mb-12">Beyond coaching, we design and ship our own software. Both apps run entirely on your device &mdash; no accounts, no uploads.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
+
+                <article class="bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-700 flex flex-col">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="flex items-center justify-center w-12 h-12 shrink-0 rounded-lg bg-cyan-500/10 border border-cyan-500/30 text-cyan-400" aria-hidden="true">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M12 11v6"/><path d="m9.5 14.5 2.5 2.5 2.5-2.5"/></svg>
+                        </span>
+                        <div>
+                            <h3 class="text-xl font-bold text-cyan-500">Offline PDF &amp; Photo Compressor</h3>
+                            <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mt-1">Android &middot; Tools</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 flex-1">Shrink photos and PDFs to an exact size &mdash; 200&nbsp;KB for a job portal, or a PDF small enough to email &mdash; right on your phone. Your files never leave the device.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.sanojtechnologies.pocket_compress"
+                       target="_blank" rel="noopener noreferrer" data-cta="app-pdf-compressor"
+                       class="inline-flex items-center gap-2 text-cyan-400 font-semibold hover:text-cyan-300 transition-colors duration-200">
+                        View on Google Play
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </article>
+
+                <article class="bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-700 flex flex-col">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="flex items-center justify-center w-12 h-12 shrink-0 rounded-lg bg-cyan-500/10 border border-cyan-500/30 text-cyan-400" aria-hidden="true">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v3"/><path d="M8 21h8"/></svg>
+                        </span>
+                        <div>
+                            <h3 class="text-xl font-bold text-cyan-500">Minutely: AI Notes &amp; MOM Maker</h3>
+                            <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mt-1">Android &middot; Productivity</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 flex-1">Record a meeting, lecture or interview and get a transcript, speaker labels and minutes with action items &mdash; all on your phone, with no account.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.sanojtechnologies.minutely"
+                       target="_blank" rel="noopener noreferrer" data-cta="app-minutely"
+                       class="inline-flex items-center gap-2 text-cyan-400 font-semibold hover:text-cyan-300 transition-colors duration-200">
+                        View on Google Play
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
         <section id="contact" class="text-center mb-24 scroll-mt-24">
             <h2 class="text-3xl font-bold text-cyan-400 mb-4">Contact Us</h2>
             <p class="text-lg text-gray-300 max-w-3xl mx-auto mb-8">Ready to take the next step in your career? Get in touch with us.</p>
