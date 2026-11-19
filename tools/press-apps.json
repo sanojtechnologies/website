@@ -7,7 +7,8 @@
     "is_game": false,
     "category_schema": "UtilitiesApplication",
     "os": "Android 7.0+",
-    "accent": "#4fd1c5", "accent_ink": "#04201d",
+    "accent": "#4fd1c5",
+    "accent_ink": "#04201d",
     "meta_description": "Press kit for Offline PDF & Photo Compressor, an Android app that compresses photos and PDFs to a size you choose, on the phone, with no uploads.",
     "lead": "Press kit. Make photos and PDFs smaller to a size you choose, on your phone, with no uploads.",
     "hub_line": "Compress photos and PDFs to a size you choose, on the phone.",
@@ -24,26 +25,84 @@
       "Handles password-protected PDFs. You enter the password, and the compressed copy is saved without it."
     ],
     "facts": [
-      ["Developer", "Sanoj Technologies, a solo developer in India"],
-      ["Platform", "Android 7.0 or later"],
-      ["Released", "December 26, 2025"],
-      ["Model", "Supported by ads; no purchases"],
-      ["Rating", "Everyone"],
-      ["Language", "English"],
-      ["Offline", "Compression works offline; ads need internet"]
+      [
+        "Developer",
+        "Sanoj Technologies, a solo developer in India"
+      ],
+      [
+        "Platform",
+        "Android 7.0 or later"
+      ],
+      [
+        "Released",
+        "December 26, 2025"
+      ],
+      [
+        "Model",
+        "Supported by ads; no purchases"
+      ],
+      [
+        "Rating",
+        "Everyone"
+      ],
+      [
+        "Language",
+        "English"
+      ],
+      [
+        "Offline",
+        "Compression works offline; ads need internet"
+      ]
     ],
-    "notes": ["Good to know: compressed PDFs are rebuilt from page images, so their text can't be selected or searched, and photos are saved as JPG."],
+    "notes": [
+      "Good to know: compressed PDFs are rebuilt from page images, so their text can't be selected or searched, and photos are saved as JPG."
+    ],
     "date_published": "2025-12-26",
     "content_rating": "Everyone",
     "youtube_id": "u-KpnL8lDlw",
     "screenshots": [
-      {"file": "shot-01.png", "thumb": "shot-01-thumb.jpg", "tw": 405, "th": 720, "alt": "Photos into one PDF, pages in order"},
-      {"file": "shot-02.png", "thumb": "shot-02-thumb.jpg", "tw": 405, "th": 720, "alt": "Home: compress photos or PDFs, offline"},
-      {"file": "shot-03.png", "thumb": "shot-03-thumb.jpg", "tw": 405, "th": 720, "alt": "Compressing in the background"},
-      {"file": "shot-04.png", "thumb": "shot-04-thumb.jpg", "tw": 405, "th": 720, "alt": "Past files, ready to save or share again"},
-      {"file": "shot-05.png", "thumb": "shot-05-thumb.jpg", "tw": 405, "th": 720, "alt": "Settings: remove location and camera info"}
+      {
+        "file": "shot-01.png",
+        "thumb": "shot-01-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "Photos into one PDF, pages in order"
+      },
+      {
+        "file": "shot-02.png",
+        "thumb": "shot-02-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "Home: compress photos or PDFs, offline"
+      },
+      {
+        "file": "shot-03.png",
+        "thumb": "shot-03-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "Compressing in the background"
+      },
+      {
+        "file": "shot-04.png",
+        "thumb": "shot-04-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "Past files, ready to save or share again"
+      },
+      {
+        "file": "shot-05.png",
+        "thumb": "shot-05-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "Settings: remove location and camera info"
+      }
     ],
-    "feature_graphic": {"file": "feature-graphic.png", "display": "feature-graphic.jpg", "w": 1024, "h": 500},
+    "feature_graphic": {
+      "file": "feature-graphic.png",
+      "display": "feature-graphic.jpg",
+      "w": 1024,
+      "h": 500
+    },
     "footer_note": "Screenshots and video show the real app."
   },
   {
@@ -54,7 +113,8 @@
     "is_game": false,
     "category_schema": "BusinessApplication",
     "os": "Android 10+",
-    "accent": "#a99bff", "accent_ink": "#120a3a",
+    "accent": "#a99bff",
+    "accent_ink": "#120a3a",
     "meta_description": "Press kit for Minutely, an Android app that records meetings and writes the transcript, speaker labels and minutes on the phone, with nothing uploaded.",
     "lead": "Press kit. Meeting notes written on your phone: record, transcribe and summarise with nothing uploaded.",
     "hub_line": "Record a meeting and get the transcript and minutes, on the phone.",
@@ -72,27 +132,88 @@
       "Teach it names and terms so they're spelled right, then search every transcript and note."
     ],
     "facts": [
-      ["Developer", "Sanoj Technologies, a solo developer in India"],
-      ["Platform", "Android 10 or later, on a phone with at least 6 GB of memory"],
-      ["Released", "October 20, 2026"],
-      ["Model", "Supported by ads (one ad when a transcript is opened, at most once per recording per day); no purchases"],
-      ["Download size", "Over 1.4 GB, because the speech and notes models run on the phone"],
-      ["Rating", "Everyone"],
-      ["Language", "English only"],
-      ["Offline", "Works offline, even in flight mode; ads need internet"]
+      [
+        "Developer",
+        "Sanoj Technologies, a solo developer in India"
+      ],
+      [
+        "Platform",
+        "Android 10 or later, on a phone with at least 6 GB of memory"
+      ],
+      [
+        "Released",
+        "October 20, 2026"
+      ],
+      [
+        "Model",
+        "Supported by ads (one ad when a transcript is opened, at most once per recording per day); no purchases"
+      ],
+      [
+        "Download size",
+        "Over 1.4 GB, because the speech and notes models run on the phone"
+      ],
+      [
+        "Rating",
+        "Everyone"
+      ],
+      [
+        "Language",
+        "English only"
+      ],
+      [
+        "Offline",
+        "Works offline, even in flight mode; ads need internet"
+      ]
     ],
-    "notes": ["Record only with everyone's consent."],
+    "notes": [
+      "Record only with everyone's consent."
+    ],
     "date_published": "2026-10-20",
     "content_rating": "Everyone",
     "youtube_id": "P8AONtYmSME",
     "screenshots": [
-      {"file": "shot-01.png", "thumb": "shot-01-thumb.jpg", "tw": 360, "th": 720, "alt": "Home: a recording being processed on the device"},
-      {"file": "shot-02.png", "thumb": "shot-02-thumb.jpg", "tw": 360, "th": 720, "alt": "Recording with live captions"},
-      {"file": "shot-03.png", "thumb": "shot-03-thumb.jpg", "tw": 360, "th": 720, "alt": "Who was speaking? Naming each voice"},
-      {"file": "shot-04.png", "thumb": "shot-04-thumb.jpg", "tw": 360, "th": 720, "alt": "Notes: overview, key points and action items"},
-      {"file": "shot-05.png", "thumb": "shot-05-thumb.jpg", "tw": 360, "th": 720, "alt": "Settings: notes styles and names and terms"}
+      {
+        "file": "shot-01.png",
+        "thumb": "shot-01-thumb.jpg",
+        "tw": 300,
+        "th": 600,
+        "alt": "Home: a recording being processed on the device"
+      },
+      {
+        "file": "shot-02.png",
+        "thumb": "shot-02-thumb.jpg",
+        "tw": 300,
+        "th": 600,
+        "alt": "Recording with live captions"
+      },
+      {
+        "file": "shot-03.png",
+        "thumb": "shot-03-thumb.jpg",
+        "tw": 300,
+        "th": 600,
+        "alt": "Who was speaking? Naming each voice"
+      },
+      {
+        "file": "shot-04.png",
+        "thumb": "shot-04-thumb.jpg",
+        "tw": 300,
+        "th": 600,
+        "alt": "Notes: overview, key points and action items"
+      },
+      {
+        "file": "shot-05.png",
+        "thumb": "shot-05-thumb.jpg",
+        "tw": 300,
+        "th": 600,
+        "alt": "Settings: notes styles and names and terms"
+      }
     ],
-    "feature_graphic": {"file": "feature-graphic.png", "display": "feature-graphic.jpg", "w": 1024, "h": 500},
+    "feature_graphic": {
+      "file": "feature-graphic.png",
+      "display": "feature-graphic.jpg",
+      "w": 1024,
+      "h": 500
+    },
     "footer_note": "Screenshots and video show the real app, with a demo meeting and fictional names."
   },
   {
@@ -104,7 +225,8 @@
     "genre": "Puzzle",
     "category_schema": "GameApplication",
     "os": "Android 7.0+",
-    "accent": "#ffc83d", "accent_ink": "#2b2000",
+    "accent": "#ffc83d",
+    "accent_ink": "#2b2000",
     "meta_description": "Press kit for Sortlock, a ball sort puzzle for Android with color locks, order locks and a daily puzzle.",
     "lead": "Press kit. A ball sort puzzle with locks, by a solo developer in India.",
     "hub_line": "A ball sort puzzle with color locks, order locks and a daily puzzle.",
@@ -120,14 +242,38 @@
       "Every color also has its own symbol, for color-blind players. No timers, no account."
     ],
     "facts": [
-      ["Developer", "Sanoj Technologies, a solo developer in India"],
-      ["Platform", "Android 7.0 or later"],
-      ["Released", "October 31, 2026, in 178 countries"],
-      ["Model", "Supported by ads; no purchases"],
-      ["Download size", "3.6 MB"],
-      ["Rating", "Everyone / PEGI 3"],
-      ["Language", "Game in English; store listing in 11 languages, including Hindi"],
-      ["Offline", "The game plays offline; ads need internet"]
+      [
+        "Developer",
+        "Sanoj Technologies, a solo developer in India"
+      ],
+      [
+        "Platform",
+        "Android 7.0 or later"
+      ],
+      [
+        "Released",
+        "October 31, 2026, in 178 countries"
+      ],
+      [
+        "Model",
+        "Supported by ads; no purchases"
+      ],
+      [
+        "Download size",
+        "3.6 MB"
+      ],
+      [
+        "Rating",
+        "Everyone / PEGI 3"
+      ],
+      [
+        "Language",
+        "Game in English; store listing in 11 languages, including Hindi"
+      ],
+      [
+        "Offline",
+        "The game plays offline; ads need internet"
+      ]
     ],
     "date_published": "2026-10-31",
     "file_size": "3.6 MB",
@@ -135,14 +281,55 @@
     "youtube_id": "5wZib01YWx8",
     "play_link": "https://play.google.com/store/apps/details?id=com.sanojtechnologies.sortlock&referrer=utm_source%3Dpresskit%26utm_medium%3Ddirect%26utm_campaign%3Dlaunch",
     "screenshots": [
-      {"file": "phone-01.png", "thumb": "phone-01-thumb.jpg", "tw": 405, "th": 720, "alt": "Sort colors, crack locks"},
-      {"file": "phone-02.png", "thumb": "phone-02-thumb.jpg", "tw": 405, "th": 720, "alt": "Dead-end notice"},
-      {"file": "phone-03.png", "thumb": "phone-03-thumb.jpg", "tw": 405, "th": 720, "alt": "Match par for a Perfect"},
-      {"file": "phone-04.png", "thumb": "phone-04-thumb.jpg", "tw": 405, "th": 720, "alt": "A color lock opening"},
-      {"file": "phone-05.png", "thumb": "phone-05-thumb.jpg", "tw": 405, "th": 720, "alt": "Order locks"},
-      {"file": "phone-08.png", "thumb": "phone-08-thumb.jpg", "tw": 405, "th": 720, "alt": "The Daily puzzle"}
+      {
+        "file": "phone-01.png",
+        "thumb": "phone-01-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "Sort colors, crack locks"
+      },
+      {
+        "file": "phone-02.png",
+        "thumb": "phone-02-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "Dead-end notice"
+      },
+      {
+        "file": "phone-03.png",
+        "thumb": "phone-03-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "Match par for a Perfect"
+      },
+      {
+        "file": "phone-04.png",
+        "thumb": "phone-04-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "A color lock opening"
+      },
+      {
+        "file": "phone-05.png",
+        "thumb": "phone-05-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "Order locks"
+      },
+      {
+        "file": "phone-08.png",
+        "thumb": "phone-08-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "The Daily puzzle"
+      }
     ],
-    "feature_graphic": {"file": "feature-graphic.png", "display": "feature-graphic.jpg", "w": 1024, "h": 500},
+    "feature_graphic": {
+      "file": "feature-graphic.png",
+      "display": "feature-graphic.jpg",
+      "w": 1024,
+      "h": 500
+    },
     "footer_note": "All images and video show the real game."
   },
   {
@@ -154,7 +341,8 @@
     "genre": "Puzzle",
     "category_schema": "GameApplication",
     "os": "Android 7.0+",
-    "accent": "#5ec8f0", "accent_ink": "#062030",
+    "accent": "#5ec8f0",
+    "accent_ink": "#062030",
     "meta_description": "Press kit for Daily Clear, a daily block puzzle for Android: every piece on show, every puzzle solvable, the same puzzle for everyone.",
     "lead": "Press kit. A daily block puzzle you solve rather than survive, by a solo developer in India.",
     "hub_line": "One block puzzle a day, with every piece on show.",
@@ -171,25 +359,87 @@
       "Works offline, with no account. Progress stays on the device."
     ],
     "facts": [
-      ["Developer", "Sanoj Technologies, a solo developer in India"],
-      ["Platform", "Android 7.0 or later"],
-      ["Released", "November 11, 2026, in 178 countries"],
-      ["Model", "Supported by ads, shown only after a solve; one optional purchase removes them"],
-      ["Rating", "Everyone"],
-      ["Language", "English"],
-      ["Offline", "The game plays offline; ads need internet"]
+      [
+        "Developer",
+        "Sanoj Technologies, a solo developer in India"
+      ],
+      [
+        "Platform",
+        "Android 7.0 or later"
+      ],
+      [
+        "Released",
+        "November 11, 2026, in 178 countries"
+      ],
+      [
+        "Model",
+        "Supported by ads, shown only after a solve; one optional purchase removes them"
+      ],
+      [
+        "Rating",
+        "Everyone"
+      ],
+      [
+        "Language",
+        "English"
+      ],
+      [
+        "Offline",
+        "The game plays offline; ads need internet"
+      ]
     ],
     "date_published": "2026-11-11",
     "content_rating": "Everyone",
     "screenshots": [
-      {"file": "shot-01.jpg", "thumb": "shot-01-thumb.jpg", "tw": 405, "th": 720, "alt": "Placing a piece to fill a column"},
-      {"file": "shot-02.jpg", "thumb": "shot-02-thumb.jpg", "tw": 405, "th": 720, "alt": "The daily puzzle with all pieces on show"},
-      {"file": "shot-03.jpg", "thumb": "shot-03-thumb.jpg", "tw": 405, "th": 720, "alt": "A harder weekend-style puzzle with five pieces"},
-      {"file": "shot-04.jpg", "thumb": "shot-04-thumb.jpg", "tw": 405, "th": 720, "alt": "Solved, Perfect: three stars"},
-      {"file": "shot-05.jpg", "thumb": "shot-05-thumb.jpg", "tw": 405, "th": 720, "alt": "Home after solving the day's puzzle"},
-      {"file": "shot-06.jpg", "thumb": "shot-06-thumb.jpg", "tw": 405, "th": 720, "alt": "Practice at Easy, Medium and Hard"}
+      {
+        "file": "shot-01.jpg",
+        "thumb": "shot-01-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "Placing a piece to fill a column"
+      },
+      {
+        "file": "shot-02.jpg",
+        "thumb": "shot-02-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "The daily puzzle with all pieces on show"
+      },
+      {
+        "file": "shot-03.jpg",
+        "thumb": "shot-03-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "A harder weekend-style puzzle with five pieces"
+      },
+      {
+        "file": "shot-04.jpg",
+        "thumb": "shot-04-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "Solved, Perfect: three stars"
+      },
+      {
+        "file": "shot-05.jpg",
+        "thumb": "shot-05-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "Home after solving the day's puzzle"
+      },
+      {
+        "file": "shot-06.jpg",
+        "thumb": "shot-06-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "Practice at Easy, Medium and Hard"
+      }
     ],
-    "feature_graphic": {"file": "feature-graphic.jpg", "display": "feature-graphic.jpg", "w": 1024, "h": 500},
+    "feature_graphic": {
+      "file": "feature-graphic.jpg",
+      "display": "feature-graphic.jpg",
+      "w": 1024,
+      "h": 500
+    },
     "footer_note": "Screenshots show the real game."
   },
   {
@@ -202,7 +452,8 @@
     "category_schema": "GameApplication",
     "os": "Android 7.0+",
     "landscape": true,
-    "accent": "#7cc8ff", "accent_ink": "#04182b",
+    "accent": "#7cc8ff",
+    "accent_ink": "#04182b",
     "meta_description": "Press kit for Storm Cloud: Chain Lightning, a one-thumb action roguelite for Android where you steer a storm cloud and chain lightning through swarms.",
     "lead": "Press kit. A one-thumb action roguelite where you are the storm, by a solo developer in India.",
     "hub_line": "Steer a storm cloud and chain lightning through swarms of invaders.",
@@ -219,25 +470,87 @@
       "Plays offline. No purchases, no energy timers, and everything unlocks by playing."
     ],
     "facts": [
-      ["Developer", "Sanoj Technologies, a solo developer in India"],
-      ["Platform", "Android 7.0 or later"],
-      ["Released", "November 2026"],
-      ["Model", "No purchases; everything unlocks by playing"],
-      ["Rating", "Everyone (ESRB: mild fantasy violence)"],
-      ["Language", "English"],
-      ["Offline", "Plays offline"]
+      [
+        "Developer",
+        "Sanoj Technologies, a solo developer in India"
+      ],
+      [
+        "Platform",
+        "Android 7.0 or later"
+      ],
+      [
+        "Released",
+        "November 2026"
+      ],
+      [
+        "Model",
+        "No purchases; everything unlocks by playing"
+      ],
+      [
+        "Rating",
+        "Everyone (ESRB: mild fantasy violence)"
+      ],
+      [
+        "Language",
+        "English"
+      ],
+      [
+        "Offline",
+        "Plays offline"
+      ]
     ],
     "content_rating": "Everyone",
     "youtube_id": "_HVi8nbgBfA",
     "screenshots": [
-      {"file": "shot-01.png", "thumb": "shot-01-thumb.jpg", "tw": 720, "th": 405, "alt": "The Sun boss, weak to lightning, takes triple damage"},
-      {"file": "shot-02.png", "thumb": "shot-02-thumb.jpg", "tw": 720, "th": 405, "alt": "Lightning chains past the melting Iceberg"},
-      {"file": "shot-03.png", "thumb": "shot-03-thumb.jpg", "tw": 720, "th": 405, "alt": "A 20-hit chain on the city rooftops"},
-      {"file": "shot-04.png", "thumb": "shot-04-thumb.jpg", "tw": 720, "th": 405, "alt": "Chain lightning on the stormy coast"},
-      {"file": "shot-05.png", "thumb": "shot-05-thumb.jpg", "tw": 720, "th": 405, "alt": "Victory Storm after the Iceberg is defeated"},
-      {"file": "shot-06.png", "thumb": "shot-06-thumb.jpg", "tw": 720, "th": 405, "alt": "Choosing an upgrade: Hail, Forked lightning, Thunderclap"}
+      {
+        "file": "shot-01.png",
+        "thumb": "shot-01-thumb.jpg",
+        "tw": 720,
+        "th": 405,
+        "alt": "The Sun boss, weak to lightning, takes triple damage"
+      },
+      {
+        "file": "shot-02.png",
+        "thumb": "shot-02-thumb.jpg",
+        "tw": 720,
+        "th": 405,
+        "alt": "Lightning chains past the melting Iceberg"
+      },
+      {
+        "file": "shot-03.png",
+        "thumb": "shot-03-thumb.jpg",
+        "tw": 720,
+        "th": 405,
+        "alt": "A 20-hit chain on the city rooftops"
+      },
+      {
+        "file": "shot-04.png",
+        "thumb": "shot-04-thumb.jpg",
+        "tw": 720,
+        "th": 405,
+        "alt": "Chain lightning on the stormy coast"
+      },
+      {
+        "file": "shot-05.png",
+        "thumb": "shot-05-thumb.jpg",
+        "tw": 720,
+        "th": 405,
+        "alt": "Victory Storm after the Iceberg is defeated"
+      },
+      {
+        "file": "shot-06.png",
+        "thumb": "shot-06-thumb.jpg",
+        "tw": 720,
+        "th": 405,
+        "alt": "Choosing an upgrade: Hail, Forked lightning, Thunderclap"
+      }
     ],
-    "feature_graphic": {"file": "feature-graphic.png", "display": "feature-graphic.jpg", "w": 1024, "h": 500},
+    "feature_graphic": {
+      "file": "feature-graphic.png",
+      "display": "feature-graphic.jpg",
+      "w": 1024,
+      "h": 500
+    },
     "footer_note": "All images and video show the real game."
   },
   {
@@ -249,7 +562,8 @@
     "genre": "Puzzle",
     "category_schema": "GameApplication",
     "os": "Android 7.0+",
-    "accent": "#f6a845", "accent_ink": "#2b1600",
+    "accent": "#f6a845",
+    "accent_ink": "#2b1600",
     "meta_description": "Press kit for Tilt Push, a calm box-pushing puzzle for Android where every push tips the floor. 80 levels and a daily level.",
     "lead": "Press kit. A calm box-pushing puzzle where every push tips the floor, by a solo developer in India.",
     "hub_line": "Push a box and the whole floor tips. 80 levels and a daily level.",
@@ -266,27 +580,92 @@
       "Works offline, with no account. Progress stays on the device."
     ],
     "facts": [
-      ["Developer", "Sanoj Technologies, a solo developer in India"],
-      ["Platform", "Android 7.0 or later"],
-      ["Released", "November 15, 2026, in 178 countries"],
-      ["Model", "Supported by ads, shown only after a finished level; one optional purchase removes full-screen ads and makes every Hint free"],
-      ["Download size", "3.3 MB"],
-      ["Rating", "Everyone"],
-      ["Language", "English"],
-      ["Offline", "The game plays offline; ads need internet"]
+      [
+        "Developer",
+        "Sanoj Technologies, a solo developer in India"
+      ],
+      [
+        "Platform",
+        "Android 7.0 or later"
+      ],
+      [
+        "Released",
+        "November 15, 2026, in 178 countries"
+      ],
+      [
+        "Model",
+        "Supported by ads, shown only after a finished level; one optional purchase removes full-screen ads and makes every Hint free"
+      ],
+      [
+        "Download size",
+        "3.3 MB"
+      ],
+      [
+        "Rating",
+        "Everyone"
+      ],
+      [
+        "Language",
+        "English"
+      ],
+      [
+        "Offline",
+        "The game plays offline; ads need internet"
+      ]
     ],
     "date_published": "2026-11-15",
     "file_size": "3.3 MB",
     "content_rating": "Everyone",
     "screenshots": [
-      {"file": "shot-01.png", "thumb": "shot-01-thumb.jpg", "tw": 405, "th": 720, "alt": "Push a box and the whole floor tips"},
-      {"file": "shot-02.png", "thumb": "shot-02-thumb.jpg", "tw": 405, "th": 720, "alt": "The top line shows which way boxes slide next"},
-      {"file": "shot-03.png", "thumb": "shot-03-thumb.jpg", "tw": 405, "th": 720, "alt": "How to play, taught in the first minute"},
-      {"file": "shot-04.png", "thumb": "shot-04-thumb.jpg", "tw": 405, "th": 720, "alt": "Two stars for the fewest pushes"},
-      {"file": "shot-05.png", "thumb": "shot-05-thumb.jpg", "tw": 405, "th": 720, "alt": "The level grid: 80 levels"},
-      {"file": "shot-06.png", "thumb": "shot-06-thumb.jpg", "tw": 405, "th": 720, "alt": "The daily level"}
+      {
+        "file": "shot-01.png",
+        "thumb": "shot-01-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "Push a box and the whole floor tips"
+      },
+      {
+        "file": "shot-02.png",
+        "thumb": "shot-02-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "The top line shows which way boxes slide next"
+      },
+      {
+        "file": "shot-03.png",
+        "thumb": "shot-03-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "How to play, taught in the first minute"
+      },
+      {
+        "file": "shot-04.png",
+        "thumb": "shot-04-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "Two stars for the fewest pushes"
+      },
+      {
+        "file": "shot-05.png",
+        "thumb": "shot-05-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "The level grid: 80 levels"
+      },
+      {
+        "file": "shot-06.png",
+        "thumb": "shot-06-thumb.jpg",
+        "tw": 337,
+        "th": 600,
+        "alt": "The daily level"
+      }
     ],
-    "feature_graphic": {"file": "feature-graphic.png", "display": "feature-graphic.jpg", "w": 1024, "h": 500},
+    "feature_graphic": {
+      "file": "feature-graphic.png",
+      "display": "feature-graphic.jpg",
+      "w": 1024,
+      "h": 500
+    },
     "footer_note": "Screenshots show the real game."
   }
 ]

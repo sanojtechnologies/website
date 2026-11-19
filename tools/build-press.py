@@ -7,7 +7,8 @@ Edit that file, then run from the repo root:
     python3 tools/build-press.py
 
 The output is plain HTML that is committed to the repo; nothing runs at deploy time.
-Screenshot thumbnails (*-thumb.jpg) and icon-128/192 PNGs are made with sips, not by this script.
+Screenshot thumbnails (*-thumb.jpg, 600px tall for portrait), feature-graphic-512.jpg and the
+icon-128/192 PNGs are made with sips, not by this script.
 """
 import html
 import json
@@ -53,6 +54,10 @@ table{width:100%%;border-collapse:collapse} th,td{text-align:left;vertical-align
 .grid.land{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
 .wide{width:100%%;height:auto;border-radius:12px;display:block}
 .video{position:relative;aspect-ratio:16/9;background:var(--panel);border-radius:12px;overflow:hidden} .video iframe{position:absolute;inset:0;width:100%%;height:100%%;border:0}
+.yt{position:absolute;inset:0;display:block} .yt img{width:100%%;height:100%%;object-fit:cover;display:block}
+.play{position:absolute;left:50%%;top:50%%;width:68px;height:48px;margin:-24px 0 0 -34px;border-radius:14px;background:rgba(0,0,0,.72)}
+.play::after{content:"";position:absolute;left:28px;top:14px;border-style:solid;border-width:10px 0 10px 16px;border-color:transparent transparent transparent #fff}
+.yt:hover .play,.yt:focus-visible .play{background:#e00}
 .more{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;list-style:none;padding:0}
 .more li{margin:0} .more a{display:flex;gap:12px;align-items:center;padding:10px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--text)}
 .more img{width:44px;height:44px;border-radius:10px;flex:none} .more span{font-weight:600;line-height:1.3}
@@ -65,6 +70,7 @@ BEACON = f"""<script>
 (function(){{var s=document.createElement('script');s.type='module';s.defer=true;s.src='https://static.cloudflareinsights.com/beacon.min.js';s.setAttribute('data-cf-beacon',JSON.stringify({{token:'{CF_TOKEN}'}}));document.body.appendChild(s);}})();
 window.trackEvent=function(l){{try{{if(window.zaraz&&zaraz.track)zaraz.track('cta_click',{{label:l}});if(window.goatcounter&&goatcounter.count)goatcounter.count({{path:'cta/'+l,title:l,event:true}});}}catch(e){{}}}};
 document.addEventListener('click',function(ev){{var t=ev.target.closest('[data-cta]');if(t)window.trackEvent(t.getAttribute('data-cta'));}},{{passive:true}});
+document.addEventListener('click',function(ev){{var y=ev.target.closest('a.yt');if(!y)return;ev.preventDefault();var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+y.dataset.yt+'?autoplay=1';f.title=y.dataset.title;f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;y.replaceWith(f);}});
 </script>"""
 
 
@@ -159,7 +165,9 @@ def page(a):
             w(f"<p>{e(n)}</p>")
 
     if a.get("youtube_id"):
-        w(f'\n<h2>Trailer</h2>\n<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/{a["youtube_id"]}" title="{e(a["name"])} trailer" allowfullscreen loading="lazy"></iframe></div>')
+        yt = a["youtube_id"]
+        w(f'\n<h2>Trailer</h2>\n<div class="video"><a class="yt" href="https://www.youtube.com/watch?v={yt}" data-yt="{yt}" data-title="{e(a["name"])} trailer" data-cta="press-{slug}-trailer-play">'
+          f'<img src="https://i.ytimg.com/vi/{yt}/hqdefault.jpg" alt="Play the {e(a["name"])} trailer" width="480" height="360" loading="lazy"><span class="play" aria-hidden="true"></span></a></div>')
 
     w('\n<h2>Screenshots</h2>\n<p class="lead">Select a screenshot for the full-size PNG.</p>\n<div class="grid' + (' land' if a.get("landscape") else '') + '">')
     for s in shots:
@@ -168,7 +176,7 @@ def page(a):
 
     w("\n<h2>Logo and art</h2>")
     w(f'<p><a href="icon-512.png">Icon, 512x512 PNG</a> &middot; <a href="{fg["file"]}">Feature graphic, {fg["w"]}x{fg["h"]} {fg["file"].rsplit(".",1)[1].upper()}</a></p>')
-    w(f'<img class="wide" src="{fg["display"]}" alt="{e(a["name"])} feature graphic" width="{fg["w"]}" height="{fg["h"]}" loading="lazy">')
+    w(f'<img class="wide" src="{fg["display"]}" srcset="feature-graphic-512.jpg 512w, {fg["display"]} {fg["w"]}w" sizes="(max-width: 880px) calc(100vw - 32px), 848px" alt="{e(a["name"])} feature graphic" width="{fg["w"]}" height="{fg["h"]}" loading="lazy">')
 
     w(f'\n<div class="cta"><p><strong>{e(a["name"])}</strong> is available on Google Play for Android.</p><a class="btn" href="{e(play_url(a))}" data-cta="press-{slug}-play-bottom">Get it on Google Play</a></div>')
 

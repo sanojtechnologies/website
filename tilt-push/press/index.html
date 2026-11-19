@@ -112,6 +112,10 @@ table{width:100%;border-collapse:collapse} th,td{text-align:left;vertical-align:
 .grid.land{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
 .wide{width:100%;height:auto;border-radius:12px;display:block}
 .video{position:relative;aspect-ratio:16/9;background:var(--panel);border-radius:12px;overflow:hidden} .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.yt{position:absolute;inset:0;display:block} .yt img{width:100%;height:100%;object-fit:cover;display:block}
+.play{position:absolute;left:50%;top:50%;width:68px;height:48px;margin:-24px 0 0 -34px;border-radius:14px;background:rgba(0,0,0,.72)}
+.play::after{content:"";position:absolute;left:28px;top:14px;border-style:solid;border-width:10px 0 10px 16px;border-color:transparent transparent transparent #fff}
+.yt:hover .play,.yt:focus-visible .play{background:#e00}
 .more{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;list-style:none;padding:0}
 .more li{margin:0} .more a{display:flex;gap:12px;align-items:center;padding:10px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--text)}
 .more img{width:44px;height:44px;border-radius:10px;flex:none} .more span{font-weight:600;line-height:1.3}
@@ -158,17 +162,17 @@ footer{color:var(--muted);font-size:15px;margin-top:40px}
 <h2>Screenshots</h2>
 <p class="lead">Select a screenshot for the full-size PNG.</p>
 <div class="grid">
-<a href="shot-01.png"><img src="shot-01-thumb.jpg" alt="Push a box and the whole floor tips" width="405" height="720" loading="lazy"></a>
-<a href="shot-02.png"><img src="shot-02-thumb.jpg" alt="The top line shows which way boxes slide next" width="405" height="720" loading="lazy"></a>
-<a href="shot-03.png"><img src="shot-03-thumb.jpg" alt="How to play, taught in the first minute" width="405" height="720" loading="lazy"></a>
-<a href="shot-04.png"><img src="shot-04-thumb.jpg" alt="Two stars for the fewest pushes" width="405" height="720" loading="lazy"></a>
-<a href="shot-05.png"><img src="shot-05-thumb.jpg" alt="The level grid: 80 levels" width="405" height="720" loading="lazy"></a>
-<a href="shot-06.png"><img src="shot-06-thumb.jpg" alt="The daily level" width="405" height="720" loading="lazy"></a>
+<a href="shot-01.png"><img src="shot-01-thumb.jpg" alt="Push a box and the whole floor tips" width="337" height="600" loading="lazy"></a>
+<a href="shot-02.png"><img src="shot-02-thumb.jpg" alt="The top line shows which way boxes slide next" width="337" height="600" loading="lazy"></a>
+<a href="shot-03.png"><img src="shot-03-thumb.jpg" alt="How to play, taught in the first minute" width="337" height="600" loading="lazy"></a>
+<a href="shot-04.png"><img src="shot-04-thumb.jpg" alt="Two stars for the fewest pushes" width="337" height="600" loading="lazy"></a>
+<a href="shot-05.png"><img src="shot-05-thumb.jpg" alt="The level grid: 80 levels" width="337" height="600" loading="lazy"></a>
+<a href="shot-06.png"><img src="shot-06-thumb.jpg" alt="The daily level" width="337" height="600" loading="lazy"></a>
 </div>
 
 <h2>Logo and art</h2>
 <p><a href="icon-512.png">Icon, 512x512 PNG</a> &middot; <a href="feature-graphic.png">Feature graphic, 1024x500 PNG</a></p>
-<img class="wide" src="feature-graphic.jpg" alt="Tilt Push feature graphic" width="1024" height="500" loading="lazy">
+<img class="wide" src="feature-graphic.jpg" srcset="feature-graphic-512.jpg 512w, feature-graphic.jpg 1024w" sizes="(max-width: 880px) calc(100vw - 32px), 848px" alt="Tilt Push feature graphic" width="1024" height="500" loading="lazy">
 
 <div class="cta"><p><strong>Tilt Push</strong> is available on Google Play for Android.</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.sanojtechnologies.tiltpush&amp;referrer=utm_source%3Dpresskit%26utm_medium%3Ddirect%26utm_campaign%3Dlaunch" data-cta="press-tilt-push-play-bottom">Get it on Google Play</a></div>
 
@@ -189,6 +193,7 @@ footer{color:var(--muted);font-size:15px;margin-top:40px}
 (function(){var s=document.createElement('script');s.type='module';s.defer=true;s.src='https://static.cloudflareinsights.com/beacon.min.js';s.setAttribute('data-cf-beacon',JSON.stringify({token:'54eec4ca55f14407903cc0e5da73ca10'}));document.body.appendChild(s);})();
 window.trackEvent=function(l){try{if(window.zaraz&&zaraz.track)zaraz.track('cta_click',{label:l});if(window.goatcounter&&goatcounter.count)goatcounter.count({path:'cta/'+l,title:l,event:true});}catch(e){}};
 document.addEventListener('click',function(ev){var t=ev.target.closest('[data-cta]');if(t)window.trackEvent(t.getAttribute('data-cta'));},{passive:true});
+document.addEventListener('click',function(ev){var y=ev.target.closest('a.yt');if(!y)return;ev.preventDefault();var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+y.dataset.yt+'?autoplay=1';f.title=y.dataset.title;f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;y.replaceWith(f);});
 </script>
 </body>
 </html>

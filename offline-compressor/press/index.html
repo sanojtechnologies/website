@@ -105,6 +105,10 @@ table{width:100%;border-collapse:collapse} th,td{text-align:left;vertical-align:
 .grid.land{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
 .wide{width:100%;height:auto;border-radius:12px;display:block}
 .video{position:relative;aspect-ratio:16/9;background:var(--panel);border-radius:12px;overflow:hidden} .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.yt{position:absolute;inset:0;display:block} .yt img{width:100%;height:100%;object-fit:cover;display:block}
+.play{position:absolute;left:50%;top:50%;width:68px;height:48px;margin:-24px 0 0 -34px;border-radius:14px;background:rgba(0,0,0,.72)}
+.play::after{content:"";position:absolute;left:28px;top:14px;border-style:solid;border-width:10px 0 10px 16px;border-color:transparent transparent transparent #fff}
+.yt:hover .play,.yt:focus-visible .play{background:#e00}
 .more{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;list-style:none;padding:0}
 .more li{margin:0} .more a{display:flex;gap:12px;align-items:center;padding:10px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--text)}
 .more img{width:44px;height:44px;border-radius:10px;flex:none} .more span{font-weight:600;line-height:1.3}
@@ -150,21 +154,21 @@ footer{color:var(--muted);font-size:15px;margin-top:40px}
 <p>Good to know: compressed PDFs are rebuilt from page images, so their text can&#x27;t be selected or searched, and photos are saved as JPG.</p>
 
 <h2>Trailer</h2>
-<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/u-KpnL8lDlw" title="Offline PDF &amp; Photo Compressor trailer" allowfullscreen loading="lazy"></iframe></div>
+<div class="video"><a class="yt" href="https://www.youtube.com/watch?v=u-KpnL8lDlw" data-yt="u-KpnL8lDlw" data-title="Offline PDF &amp; Photo Compressor trailer" data-cta="press-offline-compressor-trailer-play"><img src="https://i.ytimg.com/vi/u-KpnL8lDlw/hqdefault.jpg" alt="Play the Offline PDF &amp; Photo Compressor trailer" width="480" height="360" loading="lazy"><span class="play" aria-hidden="true"></span></a></div>
 
 <h2>Screenshots</h2>
 <p class="lead">Select a screenshot for the full-size PNG.</p>
 <div class="grid">
-<a href="shot-01.png"><img src="shot-01-thumb.jpg" alt="Photos into one PDF, pages in order" width="405" height="720" loading="lazy"></a>
-<a href="shot-02.png"><img src="shot-02-thumb.jpg" alt="Home: compress photos or PDFs, offline" width="405" height="720" loading="lazy"></a>
-<a href="shot-03.png"><img src="shot-03-thumb.jpg" alt="Compressing in the background" width="405" height="720" loading="lazy"></a>
-<a href="shot-04.png"><img src="shot-04-thumb.jpg" alt="Past files, ready to save or share again" width="405" height="720" loading="lazy"></a>
-<a href="shot-05.png"><img src="shot-05-thumb.jpg" alt="Settings: remove location and camera info" width="405" height="720" loading="lazy"></a>
+<a href="shot-01.png"><img src="shot-01-thumb.jpg" alt="Photos into one PDF, pages in order" width="337" height="600" loading="lazy"></a>
+<a href="shot-02.png"><img src="shot-02-thumb.jpg" alt="Home: compress photos or PDFs, offline" width="337" height="600" loading="lazy"></a>
+<a href="shot-03.png"><img src="shot-03-thumb.jpg" alt="Compressing in the background" width="337" height="600" loading="lazy"></a>
+<a href="shot-04.png"><img src="shot-04-thumb.jpg" alt="Past files, ready to save or share again" width="337" height="600" loading="lazy"></a>
+<a href="shot-05.png"><img src="shot-05-thumb.jpg" alt="Settings: remove location and camera info" width="337" height="600" loading="lazy"></a>
 </div>
 
 <h2>Logo and art</h2>
 <p><a href="icon-512.png">Icon, 512x512 PNG</a> &middot; <a href="feature-graphic.png">Feature graphic, 1024x500 PNG</a></p>
-<img class="wide" src="feature-graphic.jpg" alt="Offline PDF &amp; Photo Compressor feature graphic" width="1024" height="500" loading="lazy">
+<img class="wide" src="feature-graphic.jpg" srcset="feature-graphic-512.jpg 512w, feature-graphic.jpg 1024w" sizes="(max-width: 880px) calc(100vw - 32px), 848px" alt="Offline PDF &amp; Photo Compressor feature graphic" width="1024" height="500" loading="lazy">
 
 <div class="cta"><p><strong>Offline PDF &amp; Photo Compressor</strong> is available on Google Play for Android.</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.sanojtechnologies.pocket_compress&amp;referrer=utm_source%3Dpresskit%26utm_medium%3Ddirect%26utm_campaign%3Dlaunch" data-cta="press-offline-compressor-play-bottom">Get it on Google Play</a></div>
 
@@ -185,6 +189,7 @@ footer{color:var(--muted);font-size:15px;margin-top:40px}
 (function(){var s=document.createElement('script');s.type='module';s.defer=true;s.src='https://static.cloudflareinsights.com/beacon.min.js';s.setAttribute('data-cf-beacon',JSON.stringify({token:'54eec4ca55f14407903cc0e5da73ca10'}));document.body.appendChild(s);})();
 window.trackEvent=function(l){try{if(window.zaraz&&zaraz.track)zaraz.track('cta_click',{label:l});if(window.goatcounter&&goatcounter.count)goatcounter.count({path:'cta/'+l,title:l,event:true});}catch(e){}};
 document.addEventListener('click',function(ev){var t=ev.target.closest('[data-cta]');if(t)window.trackEvent(t.getAttribute('data-cta'));},{passive:true});
+document.addEventListener('click',function(ev){var y=ev.target.closest('a.yt');if(!y)return;ev.preventDefault();var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+y.dataset.yt+'?autoplay=1';f.title=y.dataset.title;f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;y.replaceWith(f);});
 </script>
 </body>
 </html>
