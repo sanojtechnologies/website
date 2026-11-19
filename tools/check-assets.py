@@ -3,7 +3,8 @@
 
 Covers relative paths (favicon.svg), root-absolute paths (/og-image.png) and
 absolute URLs on the production domain, all of which map to files in the repo.
-Scans every .html file in the repository root.
+Scans every .html file in the repository, including subfolders such as the
+press kits, but not node_modules.
 """
 import glob
 import os
@@ -11,7 +12,10 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PAGES = sorted(glob.glob(os.path.join(ROOT, "*.html")))
+PAGES = sorted(
+    p for p in glob.glob(os.path.join(ROOT, "**", "*.html"), recursive=True)
+    if "node_modules" not in p.split(os.sep)
+)
 SITE_HOSTS = {"sanojtechnologies.com", "www.sanojtechnologies.com"}
 SKIP_SCHEMES = ("#", "mailto:", "tel:", "data:", "javascript:")
 
@@ -26,7 +30,10 @@ def resolves(path, page):
     path = path.split("?")[0].split("#")[0]
     if not path or path == "/":
         return
-    target = os.path.join(ROOT, path.lstrip("/"))
+    if path.startswith("/"):
+        target = os.path.join(ROOT, path.lstrip("/"))
+    else:
+        target = os.path.normpath(os.path.join(ROOT, os.path.dirname(page), path))
     if os.path.isdir(target):
         target = os.path.join(target, "index.html")
     if not os.path.exists(target):

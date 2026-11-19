@@ -1,0 +1,292 @@
+[
+  {
+    "slug": "offline-compressor",
+    "name": "Offline PDF & Photo Compressor",
+    "h1": "Offline PDF & Photo Compressor",
+    "package": "com.sanojtechnologies.pocket_compress",
+    "is_game": false,
+    "category_schema": "UtilitiesApplication",
+    "os": "Android 7.0+",
+    "accent": "#4fd1c5", "accent_ink": "#04201d",
+    "meta_description": "Press kit for Offline PDF & Photo Compressor, an Android app that compresses photos and PDFs to a size you choose, on the phone, with no uploads.",
+    "lead": "Press kit. Make photos and PDFs smaller to a size you choose, on your phone, with no uploads.",
+    "hub_line": "Compress photos and PDFs to a size you choose, on the phone.",
+    "what_it_is": [
+      "Offline PDF & Photo Compressor (called Offline Compressor inside the app) compresses photos and PDFs to the size you choose, in KB or MB, right on your phone. You pick files, choose a limit such as 200 KB, and save or share the smaller copy. Your files are never uploaded anywhere."
+    ],
+    "bullets": [
+      "Compress to a size you choose, such as 100 KB, 500 KB or 2 MB. The smallest limit is 10 KB.",
+      "All compression happens on the phone: no account, no uploads, and it works without internet.",
+      "Turns several photos into one PDF, with the pages dragged into order.",
+      "Compresses many files at once in the background, with progress in a notification. An interrupted batch can be resumed.",
+      "If a file can't get smaller, it keeps your original instead of handing back a bigger copy.",
+      "Removes location and camera details from photos. This can be switched off.",
+      "Handles password-protected PDFs. You enter the password, and the compressed copy is saved without it."
+    ],
+    "facts": [
+      ["Developer", "Sanoj Technologies, a solo developer in India"],
+      ["Platform", "Android 7.0 or later"],
+      ["Released", "December 26, 2025"],
+      ["Model", "Supported by ads; no purchases"],
+      ["Rating", "Everyone"],
+      ["Language", "English"],
+      ["Offline", "Compression works offline; ads need internet"]
+    ],
+    "notes": ["Good to know: compressed PDFs are rebuilt from page images, so their text can't be selected or searched, and photos are saved as JPG."],
+    "date_published": "2025-12-26",
+    "content_rating": "Everyone",
+    "youtube_id": "u-KpnL8lDlw",
+    "screenshots": [
+      {"file": "shot-01.png", "thumb": "shot-01-thumb.jpg", "tw": 405, "th": 720, "alt": "Photos into one PDF, pages in order"},
+      {"file": "shot-02.png", "thumb": "shot-02-thumb.jpg", "tw": 405, "th": 720, "alt": "Home: compress photos or PDFs, offline"},
+      {"file": "shot-03.png", "thumb": "shot-03-thumb.jpg", "tw": 405, "th": 720, "alt": "Compressing in the background"},
+      {"file": "shot-04.png", "thumb": "shot-04-thumb.jpg", "tw": 405, "th": 720, "alt": "Past files, ready to save or share again"},
+      {"file": "shot-05.png", "thumb": "shot-05-thumb.jpg", "tw": 405, "th": 720, "alt": "Settings: remove location and camera info"}
+    ],
+    "feature_graphic": {"file": "feature-graphic.png", "display": "feature-graphic.jpg", "w": 1024, "h": 500},
+    "footer_note": "Screenshots and video show the real app."
+  },
+  {
+    "slug": "minutely",
+    "name": "Minutely: AI Notes & MOM Maker",
+    "h1": "Minutely: AI Notes & MOM Maker",
+    "package": "com.sanojtechnologies.minutely",
+    "is_game": false,
+    "category_schema": "BusinessApplication",
+    "os": "Android 10+",
+    "accent": "#a99bff", "accent_ink": "#120a3a",
+    "meta_description": "Press kit for Minutely, an Android app that records meetings and writes the transcript, speaker labels and minutes on the phone, with nothing uploaded.",
+    "lead": "Press kit. Meeting notes written on your phone: record, transcribe and summarise with nothing uploaded.",
+    "hub_line": "Record a meeting and get the transcript and minutes, on the phone.",
+    "what_it_is": [
+      "Tap Record when the meeting starts and Stop when it ends. Minutely writes the full transcript, tells the speakers apart and writes the notes on your phone, in the background, even after you close the app. A notification tells you when they're ready.",
+      "Minutely needs Android 10 or later and a phone with at least 6 GB of memory. It works in English only. Record only with everyone's consent."
+    ],
+    "bullets": [
+      "Recording, transcript and notes stay on the phone. No account, no sign-up, no upload.",
+      "Works offline, even in flight mode.",
+      "Speaker labels: name each voice once in \"Who was speaking?\" and the notes use the names.",
+      "Three notes styles: Executive summary, Quick standup and Action checklist, each with key decisions and action items with owners.",
+      "Works in the background: notes are written after you stop, even if the app is closed. Phone calls pause the recording, and it resumes afterwards.",
+      "Live captions while you record with the screen on.",
+      "Teach it names and terms so they're spelled right, then search every transcript and note."
+    ],
+    "facts": [
+      ["Developer", "Sanoj Technologies, a solo developer in India"],
+      ["Platform", "Android 10 or later, on a phone with at least 6 GB of memory"],
+      ["Released", "October 20, 2026"],
+      ["Model", "Supported by ads (one ad when a transcript is opened, at most once per recording per day); no purchases"],
+      ["Download size", "Over 1.4 GB, because the speech and notes models run on the phone"],
+      ["Rating", "Everyone"],
+      ["Language", "English only"],
+      ["Offline", "Works offline, even in flight mode; ads need internet"]
+    ],
+    "notes": ["Record only with everyone's consent."],
+    "date_published": "2026-10-20",
+    "content_rating": "Everyone",
+    "youtube_id": "P8AONtYmSME",
+    "screenshots": [
+      {"file": "shot-01.png", "thumb": "shot-01-thumb.jpg", "tw": 360, "th": 720, "alt": "Home: a recording being processed on the device"},
+      {"file": "shot-02.png", "thumb": "shot-02-thumb.jpg", "tw": 360, "th": 720, "alt": "Recording with live captions"},
+      {"file": "shot-03.png", "thumb": "shot-03-thumb.jpg", "tw": 360, "th": 720, "alt": "Who was speaking? Naming each voice"},
+      {"file": "shot-04.png", "thumb": "shot-04-thumb.jpg", "tw": 360, "th": 720, "alt": "Notes: overview, key points and action items"},
+      {"file": "shot-05.png", "thumb": "shot-05-thumb.jpg", "tw": 360, "th": 720, "alt": "Settings: notes styles and names and terms"}
+    ],
+    "feature_graphic": {"file": "feature-graphic.png", "display": "feature-graphic.jpg", "w": 1024, "h": 500},
+    "footer_note": "Screenshots and video show the real app, with a demo meeting and fictional names."
+  },
+  {
+    "slug": "sortlock",
+    "name": "Sortlock: Ball Sort Puzzle",
+    "h1": "Sortlock: Ball Sort Puzzle",
+    "package": "com.sanojtechnologies.sortlock",
+    "is_game": true,
+    "genre": "Puzzle",
+    "category_schema": "GameApplication",
+    "os": "Android 7.0+",
+    "accent": "#ffc83d", "accent_ink": "#2b2000",
+    "meta_description": "Press kit for Sortlock, a ball sort puzzle for Android with color locks, order locks and a daily puzzle.",
+    "lead": "Press kit. A ball sort puzzle with locks, by a solo developer in India.",
+    "hub_line": "A ball sort puzzle with color locks, order locks and a daily puzzle.",
+    "what_it_is": [
+      "Sortlock is a ball sort puzzle with a twist: locks. Sort the colored balls into vials, crack the locks and try to match par. A solver checks every level before you see it, so every level can be won."
+    ],
+    "bullets": [
+      "Every level is checked by a solver, so it can always be won.",
+      "Every level has a par. On almost every level it is the proven minimum.",
+      "On almost every board, the game tells you when a move has left you stuck, and how many moves back is still winnable.",
+      "Color locks, \"1st/2nd/3rd\" order locks, mystery balls and tall vials.",
+      "One daily puzzle, the same for everyone.",
+      "Every color also has its own symbol, for color-blind players. No timers, no account."
+    ],
+    "facts": [
+      ["Developer", "Sanoj Technologies, a solo developer in India"],
+      ["Platform", "Android 7.0 or later"],
+      ["Released", "October 31, 2026, in 178 countries"],
+      ["Model", "Supported by ads; no purchases"],
+      ["Download size", "3.6 MB"],
+      ["Rating", "Everyone / PEGI 3"],
+      ["Language", "Game in English; store listing in 11 languages, including Hindi"],
+      ["Offline", "The game plays offline; ads need internet"]
+    ],
+    "date_published": "2026-10-31",
+    "file_size": "3.6 MB",
+    "content_rating": "Everyone",
+    "youtube_id": "5wZib01YWx8",
+    "play_link": "https://play.google.com/store/apps/details?id=com.sanojtechnologies.sortlock&referrer=utm_source%3Dpresskit%26utm_medium%3Ddirect%26utm_campaign%3Dlaunch",
+    "screenshots": [
+      {"file": "phone-01.png", "thumb": "phone-01-thumb.jpg", "tw": 405, "th": 720, "alt": "Sort colors, crack locks"},
+      {"file": "phone-02.png", "thumb": "phone-02-thumb.jpg", "tw": 405, "th": 720, "alt": "Dead-end notice"},
+      {"file": "phone-03.png", "thumb": "phone-03-thumb.jpg", "tw": 405, "th": 720, "alt": "Match par for a Perfect"},
+      {"file": "phone-04.png", "thumb": "phone-04-thumb.jpg", "tw": 405, "th": 720, "alt": "A color lock opening"},
+      {"file": "phone-05.png", "thumb": "phone-05-thumb.jpg", "tw": 405, "th": 720, "alt": "Order locks"},
+      {"file": "phone-08.png", "thumb": "phone-08-thumb.jpg", "tw": 405, "th": 720, "alt": "The Daily puzzle"}
+    ],
+    "feature_graphic": {"file": "feature-graphic.png", "display": "feature-graphic.jpg", "w": 1024, "h": 500},
+    "footer_note": "All images and video show the real game."
+  },
+  {
+    "slug": "daily-clear",
+    "name": "Daily Clear",
+    "h1": "Daily Clear",
+    "package": "com.sanojtechnologies.dailyclear",
+    "is_game": true,
+    "genre": "Puzzle",
+    "category_schema": "GameApplication",
+    "os": "Android 7.0+",
+    "accent": "#5ec8f0", "accent_ink": "#062030",
+    "meta_description": "Press kit for Daily Clear, a daily block puzzle for Android: every piece on show, every puzzle solvable, the same puzzle for everyone.",
+    "lead": "Press kit. A daily block puzzle you solve rather than survive, by a solo developer in India.",
+    "hub_line": "One block puzzle a day, with every piece on show.",
+    "what_it_is": [
+      "Daily Clear is a block puzzle you solve, not one you survive. Each day there's one board and a small set of pieces, all on show from the start. Place every piece so that rows and columns clear and nothing is left on the board."
+    ],
+    "bullets": [
+      "Every puzzle can be solved. Each one is built backwards from an empty board, so a solution always exists.",
+      "Every piece is shown from the start: no surprise pieces, and nothing is dealt to make you lose.",
+      "The same daily puzzle for everyone. You can share your result as text with a picture of the starting board, and it never gives the solution away.",
+      "Difficulty rises through the week: gentle on Monday and Tuesday, thinking a few pieces ahead by the weekend.",
+      "No timer and no lives. Undo as often as you like. Solving with no undos earns a Perfect.",
+      "Endless practice puzzles at Easy, Medium and Hard, which never touch your streak.",
+      "Works offline, with no account. Progress stays on the device."
+    ],
+    "facts": [
+      ["Developer", "Sanoj Technologies, a solo developer in India"],
+      ["Platform", "Android 7.0 or later"],
+      ["Released", "November 11, 2026, in 178 countries"],
+      ["Model", "Supported by ads, shown only after a solve; one optional purchase removes them"],
+      ["Rating", "Everyone"],
+      ["Language", "English"],
+      ["Offline", "The game plays offline; ads need internet"]
+    ],
+    "date_published": "2026-11-11",
+    "content_rating": "Everyone",
+    "screenshots": [
+      {"file": "shot-01.jpg", "thumb": "shot-01-thumb.jpg", "tw": 405, "th": 720, "alt": "Placing a piece to fill a column"},
+      {"file": "shot-02.jpg", "thumb": "shot-02-thumb.jpg", "tw": 405, "th": 720, "alt": "The daily puzzle with all pieces on show"},
+      {"file": "shot-03.jpg", "thumb": "shot-03-thumb.jpg", "tw": 405, "th": 720, "alt": "A harder weekend-style puzzle with five pieces"},
+      {"file": "shot-04.jpg", "thumb": "shot-04-thumb.jpg", "tw": 405, "th": 720, "alt": "Solved, Perfect: three stars"},
+      {"file": "shot-05.jpg", "thumb": "shot-05-thumb.jpg", "tw": 405, "th": 720, "alt": "Home after solving the day's puzzle"},
+      {"file": "shot-06.jpg", "thumb": "shot-06-thumb.jpg", "tw": 405, "th": 720, "alt": "Practice at Easy, Medium and Hard"}
+    ],
+    "feature_graphic": {"file": "feature-graphic.jpg", "display": "feature-graphic.jpg", "w": 1024, "h": 500},
+    "footer_note": "Screenshots show the real game."
+  },
+  {
+    "slug": "storm-cloud",
+    "name": "Storm Cloud: Chain Lightning",
+    "h1": "Storm Cloud: Chain Lightning",
+    "package": "com.sanojtechnologies.stormcloud",
+    "is_game": true,
+    "genre": "Action",
+    "category_schema": "GameApplication",
+    "os": "Android 7.0+",
+    "landscape": true,
+    "accent": "#7cc8ff", "accent_ink": "#04182b",
+    "meta_description": "Press kit for Storm Cloud: Chain Lightning, a one-thumb action roguelite for Android where you steer a storm cloud and chain lightning through swarms.",
+    "lead": "Press kit. A one-thumb action roguelite where you are the storm, by a solo developer in India.",
+    "hub_line": "Steer a storm cloud and chain lightning through swarms of invaders.",
+    "what_it_is": [
+      "You are a storm cloud. Steer it with one thumb, and lightning strikes nearby invaders by itself. Your rain leaves puddles, invaders standing in water are wet, and bolts leap much further between wet invaders, so one strike can chain through a whole swarm."
+    ],
+    "bullets": [
+      "One-thumb controls: you steer, and the lightning fires by itself.",
+      "Rain makes puddles, wet invaders conduct, and one strike can chain through the crowd.",
+      "Runs last about 4 minutes. Survive the storm, or beat the boss that arrives at 3:00.",
+      "3 bosses, the Sun, the Giant Fan and the Iceberg, each with a weakness that makes it take triple damage.",
+      "5 clouds to unlock, from Drizzle to Thunderhead, across 3 arenas: Farmland, City Rooftops and Stormy Coast.",
+      "11 upgrades, 4 combos and 3 evolutions (Flood Arc, Supercell, Blizzard), with the recipes shown on the cards.",
+      "Plays offline. No purchases, no energy timers, and everything unlocks by playing."
+    ],
+    "facts": [
+      ["Developer", "Sanoj Technologies, a solo developer in India"],
+      ["Platform", "Android 7.0 or later"],
+      ["Released", "November 2026"],
+      ["Model", "No purchases; everything unlocks by playing"],
+      ["Rating", "Everyone (ESRB: mild fantasy violence)"],
+      ["Language", "English"],
+      ["Offline", "Plays offline"]
+    ],
+    "content_rating": "Everyone",
+    "youtube_id": "_HVi8nbgBfA",
+    "screenshots": [
+      {"file": "shot-01.png", "thumb": "shot-01-thumb.jpg", "tw": 720, "th": 405, "alt": "The Sun boss, weak to lightning, takes triple damage"},
+      {"file": "shot-02.png", "thumb": "shot-02-thumb.jpg", "tw": 720, "th": 405, "alt": "Lightning chains past the melting Iceberg"},
+      {"file": "shot-03.png", "thumb": "shot-03-thumb.jpg", "tw": 720, "th": 405, "alt": "A 20-hit chain on the city rooftops"},
+      {"file": "shot-04.png", "thumb": "shot-04-thumb.jpg", "tw": 720, "th": 405, "alt": "Chain lightning on the stormy coast"},
+      {"file": "shot-05.png", "thumb": "shot-05-thumb.jpg", "tw": 720, "th": 405, "alt": "Victory Storm after the Iceberg is defeated"},
+      {"file": "shot-06.png", "thumb": "shot-06-thumb.jpg", "tw": 720, "th": 405, "alt": "Choosing an upgrade: Hail, Forked lightning, Thunderclap"}
+    ],
+    "feature_graphic": {"file": "feature-graphic.png", "display": "feature-graphic.jpg", "w": 1024, "h": 500},
+    "footer_note": "All images and video show the real game."
+  },
+  {
+    "slug": "tilt-push",
+    "name": "Tilt Push",
+    "h1": "Tilt Push",
+    "package": "com.sanojtechnologies.tiltpush",
+    "is_game": true,
+    "genre": "Puzzle",
+    "category_schema": "GameApplication",
+    "os": "Android 7.0+",
+    "accent": "#f6a845", "accent_ink": "#2b1600",
+    "meta_description": "Press kit for Tilt Push, a calm box-pushing puzzle for Android where every push tips the floor. 80 levels and a daily level.",
+    "lead": "Press kit. A calm box-pushing puzzle where every push tips the floor, by a solo developer in India.",
+    "hub_line": "Push a box and the whole floor tips. 80 levels and a daily level.",
+    "what_it_is": [
+      "Push a box one square and the whole floor tips a quarter turn. Every box then slides until a wall, another box or you stop it. Rest every box on a ring to finish the level."
+    ],
+    "bullets": [
+      "The floor always tips the next way round: left, up, right, down. The top line says which way the next push sends the boxes, and an outline shows where each will stop.",
+      "You're part of the puzzle: a sliding box stops when it reaches you.",
+      "A grey stone that never slides, so you can put a wall where you need one.",
+      "80 levels, each checked by computer to be finishable, each showing the fewest pushes it can be done in.",
+      "A new daily level every day, the same for everyone.",
+      "No timer and no lives, with unlimited undo. The game tells you when a level can no longer be finished.",
+      "Works offline, with no account. Progress stays on the device."
+    ],
+    "facts": [
+      ["Developer", "Sanoj Technologies, a solo developer in India"],
+      ["Platform", "Android 7.0 or later"],
+      ["Released", "November 15, 2026, in 178 countries"],
+      ["Model", "Supported by ads, shown only after a finished level; one optional purchase removes full-screen ads and makes every Hint free"],
+      ["Download size", "3.3 MB"],
+      ["Rating", "Everyone"],
+      ["Language", "English"],
+      ["Offline", "The game plays offline; ads need internet"]
+    ],
+    "date_published": "2026-11-15",
+    "file_size": "3.3 MB",
+    "content_rating": "Everyone",
+    "screenshots": [
+      {"file": "shot-01.png", "thumb": "shot-01-thumb.jpg", "tw": 405, "th": 720, "alt": "Push a box and the whole floor tips"},
+      {"file": "shot-02.png", "thumb": "shot-02-thumb.jpg", "tw": 405, "th": 720, "alt": "The top line shows which way boxes slide next"},
+      {"file": "shot-03.png", "thumb": "shot-03-thumb.jpg", "tw": 405, "th": 720, "alt": "How to play, taught in the first minute"},
+      {"file": "shot-04.png", "thumb": "shot-04-thumb.jpg", "tw": 405, "th": 720, "alt": "Two stars for the fewest pushes"},
+      {"file": "shot-05.png", "thumb": "shot-05-thumb.jpg", "tw": 405, "th": 720, "alt": "The level grid: 80 levels"},
+      {"file": "shot-06.png", "thumb": "shot-06-thumb.jpg", "tw": 405, "th": 720, "alt": "The daily level"}
+    ],
+    "feature_graphic": {"file": "feature-graphic.png", "display": "feature-graphic.jpg", "w": 1024, "h": 500},
+    "footer_note": "Screenshots show the real game."
+  }
+]
